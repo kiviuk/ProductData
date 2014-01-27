@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>View 2</h2>
+    Name:
+    <input type="text" data-ng-model='filter.name'/>
+    <br/>
+
+    <ul>
+        <li data-ng-repeat="row in data | filter: filter.name | orderBy: descr">{{ row.name }} - {{ row.descr }}></li>
+    </ul>
+</div>
